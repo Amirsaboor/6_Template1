@@ -1,0 +1,345 @@
+@font-face {
+    font-family: 'BaiJamjuree';
+    src: url(../Font/BaiJamjuree-Medium.ttf);
+}
+
+html,body{
+    font-family: 'BaiJamjuree';
+    font-size: 18px;
+    height: 100%;
+}
+
+:root{
+    --Strong-Cyan:hsl(171, 66%, 44%);
+    --Light-Blue:hsl(233, 100%, 69%);
+    --Dark-Grayish-Blue:hsl(210, 10%, 33%);
+    --Grayish-Blue:hsl(201, 11%, 66%);
+
+}
+
+header{
+    background-image: url(../images/images/bg-header-desktop.png);
+    background-size: contain;
+    display: flex;
+    justify-content: center;
+    /* height: 700px; */
+    background-repeat: no-repeat;
+}
+
+header > div{
+    width: 80%;
+    text-align: center;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    padding-top: 130px;
+    
+    
+}
+.Header-TextBox{
+    margin-top: 60px;
+}
+.Header-TextBox h2{
+    color: var(--Dark-Grayish-Blue);
+    font-size: 45px;
+    font-weight: 700;
+}
+.Header-Text{
+    width:65%;
+    color: var(--Grayish-Blue);
+    margin: auto;
+    margin-top: 25px;
+    line-height:30px;
+    font-size: 20px;
+}
+.BTN{
+    margin-top: 45px;
+}
+.BTN button{
+    padding: 17px 40px;
+    font-size: 18px;
+    color: white;
+    border-radius: 40px;
+    border: 0px ;
+}
+.Btn-Mac{
+    background-color: #6174ff;
+    box-shadow: 1px 3px #5161da;
+    margin-left: 15px;
+    transition: 0.3s;
+}
+.Btn-Mac:hover{
+    background-color: #394392;
+    box-shadow: 1px 3px #1a1f46;
+    transition: 0.3s;
+}
+.Btn-IOS{
+    background-color: #26bba5;
+    box-shadow: 1px 3px #20a089;
+    transition: 0.3s;
+}
+.Btn-IOS:hover{
+    background-color: #177264;
+    box-shadow: 1px 3px #0e493e;
+}
+
+.Part1{
+    margin: 175px 0;
+}
+.Text-Box{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    margin-bottom: 60px;
+
+}
+.Part-Heading-Text{
+    color: var(--Dark-Grayish-Blue);
+    font-size: 33px;
+    font-weight: 900;
+    text-align: center;
+}
+
+.Part-Medium-Text{
+    width:44%;
+    color: var(--Grayish-Blue);
+    margin: auto;
+    margin-top: 25px;
+    line-height:30px;
+    font-size: 17px;
+    font-weight: 100;
+    text-align: center;
+    word-spacing: 2px;
+}
+
+.Content-Box-Part1{
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+}
+.Image-box{
+    flex: 1;
+    flex-shrink: 1;
+}
+.Image-box img{
+    width: 100%;
+}
+
+
+.Content-Box{
+    flex: 1;
+    display: flex;
+    justify-content: center;
+}
+.Content-Box >div{
+    width: 50%;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-evenly;
+}
+
+.Content-Title{
+    font-size: 22px;
+    font-weight: 700;
+    margin-bottom: 20px;
+    color: var(--Dark-Grayish-Blue);
+}
+.Content-Text{
+    font-size: 15px;
+    color: var(--Grayish-Blue);
+    line-height: 30px;
+}
+
+.Part2{
+    text-align: center;
+    margin-bottom: 50px;
+}
+.Part2 img{
+    width: 65%;
+}
+
+.Content-Box-Part3{
+    margin-top: 50px;
+    display: flex;
+    justify-content: space-evenly;
+    flex-wrap: wrap;
+}
+.Content-Box-Part3 >div{
+    flex-basis: 300px;
+    text-align: center;
+}
+.Content-Box-Part3 >div >img{
+    margin-bottom: 30px;
+}
+.Brand-Part3{
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    justify-content: space-evenly;
+    margin-top: 100px;
+    align-items: center;
+}
+.Brand-Part3 >div{
+    flex-basis: 150px;
+    flex-shrink: 0;
+    flex-grow: 0;
+    margin: 20px;
+}
+.Brand-Part3 img{
+        width: 100%;
+        transition: 0.5s;
+}
+
+.Brand-Part3 img:hover{
+    transform: scale(1.1);
+    transition: 0.5s;
+    cursor: pointer;
+}
+.Part3 >:last-child{
+    text-align: center;
+    margin-top: 150px;
+    margin-bottom: 150px;
+}
+
+footer{
+    background-color: #f5f6f8;
+    height: 100px;
+    padding: 25px;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-evenly;
+}
+.footer-column1{
+    width: 20%;
+}
+.footer-column2{
+    width: 40%;
+    flex-shrink: 0;
+    flex-grow: 0;
+    display: flex;
+    flex-wrap: wrap;
+    flex-direction: row;
+}
+.footer-column2 a{
+    
+    text-decoration: none;
+    color: var(--Dark-Grayish-Blue);
+    flex-basis: 130px;
+
+}
+.footer-column1 img{
+    width: 80px;
+}
+.footer-column3{
+    width: 25%;
+}
+
+
+
+
+
+@media screen and (max-width: 992px) and (min-width: 769px){
+    .Header-TextBox h2{
+        font-size: 37px;
+    }
+    .Header-Text{
+        width:90%;
+    }
+    .Content-Text{
+        margin-bottom: 50px;
+    }
+    .footer-column2{
+        width: 60%;}
+
+}
+
+@media screen and (max-width: 768px) and (min-width: 577px){
+    .Header-TextBox h2{
+        font-size: 31px;
+    }
+    .Header-Text{
+        width:100%;
+        font-size: 15px;
+    }
+
+    .Btn-IOS{
+        margin-bottom: 30px;
+    }
+    .Btn-Mac{
+        margin-left: 0;
+    }
+    .Part-Medium-Text{
+        font-size: 15px;
+        width:80%;
+
+    }
+    .Content-Box-Part1{
+        flex-direction:column; 
+    }
+    .Image-box{
+        margin-bottom: 30px;
+    }
+    .Content-Text{
+        margin-bottom: 50px;
+    }
+
+    .footer-column2{
+        width: 65%;}
+}
+
+@media screen and (max-width: 576px){
+    header{
+        background-size: cover;
+    }
+    .Header-TextBox h2{
+        font-size: 31px;
+    }
+    .Header-Text{
+        width:100%;
+        font-size: 15px;
+    }
+
+    .Btn-IOS{
+        margin-bottom: 30px;
+    }
+    .Btn-Mac{
+        margin-left: 0;
+    }
+    .Part-Medium-Text{
+        font-size: 15px;
+        width:80%;
+
+    }
+
+    .Content-Box-Part1{
+        flex-direction:column; 
+    }
+    .Image-box{
+        margin-bottom: 30px;
+        text-align: center;
+    }
+    .Image-box img{
+        width: 80% !important;
+    }
+    .Content-Text{
+        margin-bottom: 50px;
+    }
+
+    footer{
+        flex-direction: column;
+        height: auto;
+        align-items: center;
+    }
+    .footer-column2{
+        margin-top: 30px;
+        margin-bottom: 30px;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+    }
+    .footer-column2 a{
+        flex-basis: 30px;
+    }
+
+
+}
